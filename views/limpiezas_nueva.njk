@@ -1,0 +1,23 @@
+{% extends "base.njk" %}
+
+{% block titulo %}Limpiezas | Nueva{% endblock %}
+
+{% block contenido %}
+    <div class="container mt-4">
+        <h1 class="mb-4">Nueva limpieza en habitación</h1>
+
+        <form action="/limpiezas/{{ habitacion }}" method="post">            
+            <div class="form-group">
+                <label for="fechaLimpieza" class="form-label">Fecha de la limpieza:</label>
+                <input type="date" name="fechaLimpieza" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="observaciones" class="form-label">Observaciones:</label>
+                <textarea name="observaciones" class="form-control"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar Limpieza</button>
+        </form>
+    </div>
+{% endblock %}

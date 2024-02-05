@@ -1,0 +1,30 @@
+{% extends "base.njk" %}
+{% block titulo %}Contactos | Nuevo{% endblock %}
+{% block contenido %}
+    <div class="container">
+        <h1>limpieza de habitacion {{idHabitacion}}</h1>
+        <div>
+            <!-- Aquí mostraremos el listado -->
+            <ul>
+                {% if limpiezas.length > 0 %}
+                {% for limpieza in limpiezas %}
+                    <li>
+                        <p>Fecha: {{limpieza.fechaHora}}</p>
+                        {% if limpieza.observaciones %}
+                            <p>Observaciones: {{limpieza.observaciones}}</p>
+                        {% else %}
+                            <p>Sin observaciones</p>
+                        {% endif %}
+                        
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    <li>No hay limpiezas registradas para esta habitación.</li>
+                {% endif %}
+                </ul>
+                 {% if (session and session.usuario) %}
+                    <a class="btn btn-primary" href="/limpiezas/nueva/{{ idHabitacion }}">Nueva Limpieza</a>
+                {% endif %}
+            </div>
+        </div>
+    {% endblock %}

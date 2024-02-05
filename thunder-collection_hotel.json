@@ -1,0 +1,229 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "hotel",
+    "dateExported": "2023-11-28T17:44:25.810Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3529c64f-9dcb-4838-adf8-13cfdb402b43",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": "GET /habitaciones",
+            "url": "",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-27T17:29:27.924Z",
+            "modified": "2023-11-27T17:29:27.924Z",
+            "headers": []
+        },
+        {
+            "_id": "177dfcdc-7f13-4564-912c-c715b61410dc",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": "GET /habitaciones/:id",
+            "url": "/habitaciones/1a1a1a1a1a1a1a1a1a1a1a1a",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-22T09:39:08.134Z",
+            "modified": "2023-11-27T17:15:11.084Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "67eb15af-48c9-4cbd-ab31-643590bd9b7d",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": " GET /habitaciones",
+            "url": "/habitaciones",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-27T17:14:34.991Z",
+            "modified": "2023-11-27T17:15:32.414Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5fcffb0e-e37f-457c-b5bc-dd7573c9d746",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": "POST /habitaciones",
+            "url": "/habitaciones",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-11-27T17:16:11.368Z",
+            "modified": "2023-11-28T17:43:14.008Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \n    \"numero\": 11,\n    \"descripcion\": \"Habitacion mala\",\n    \"ultimaLimpieza\": \"2023-11-10T13:07:10.000Z\",\n    \"precio\": 180.3\n\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDExOTMzNjUsImV4cCI6MTcwMTIwMDU2NX0.mK0if9jhItXNmfVg1RafeT0erE6jOxaMqo1CAzYA8Qc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "314442c6-360e-4382-9c46-25284dbd07b0",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": " PUT /habitaciones/:id",
+            "url": "/habitaciones/6564cf433cad367c1d92461d",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-11-27T17:18:44.001Z",
+            "modified": "2023-11-27T17:21:32.956Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"numero\": 6,\r\n    \"descripcion\": \"Habitacion con piscina y cama matrimonial\",\r\n    \"ultimaLimpieza\": \"2023-11-10T13:07:10.000Z\",\r\n    \"precio\": 140.3\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4d45c78a-bc9a-4dd3-8df0-a2d94656f02e",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": "DELETE /habitaciones/:id",
+            "url": "/habitaciones/6564cf433cad367c1d92461d",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-11-27T17:22:03.184Z",
+            "modified": "2023-11-27T17:22:43.550Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "28aca306-bb0f-4431-9679-7b3f6a718ba7",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": "POST /habitaciones/:id/incidencias",
+            "url": "/habitaciones/2b2b2b2b2b2b2b2b2b2b2b2b/incidencias",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-11-27T17:23:18.072Z",
+            "modified": "2023-11-27T17:27:40.315Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"descripcion\":\"habitacion devuelta muy sucia\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5a23add5-6c51-4c59-9e08-0a2e9df91412",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": " PUT /habitaciones/:idH/incidencias/:idI",
+            "url": "/habitaciones/4d4d4d4d4d4d4d4d4d4d4d4d/incidencias/655b3ab314ca93109c4d0645",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-11-27T17:28:25.031Z",
+            "modified": "2023-11-27T17:33:19.086Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "498d5104-922a-4460-8dcc-b713261fde89",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": "PUT /habitaciones/:id/ultimalimpieza",
+            "url": "/habitaciones/1a1a1a1a1a1a1a1a1a1a1a1a/ultimalimpieza",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2023-11-13T11:25:40.061Z",
+            "modified": "2023-11-22T10:51:45.711Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"observaciones\": \"habitacion destruida por borrachos\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "["
+                }
+            ]
+        },
+        {
+            "_id": "d4e49a32-7ff2-4d18-9ecc-c443a1f8cd74",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": " GET /limpiezas/:id",
+            "url": "/limpiezas/1a1a1a1a1a1a1a1a1a1a1a1a",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-11-27T17:36:37.899Z",
+            "modified": "2023-11-27T17:47:36.259Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "78a6fce2-0b4e-4022-b5fa-5d6b6a3b4650",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": " GET /limpiezas/:id/estadolimpieza ",
+            "url": "/limpiezas/3c3c3c3c3c3c3c3c3c3c3c3c/estadolimpieza",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2023-11-27T17:40:28.463Z",
+            "modified": "2023-11-27T17:47:39.293Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f61dd97d-9701-4e8d-a622-e325a0885836",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": "POST /limpiezas/:id ",
+            "url": "/limpiezas/3c3c3c3c3c3c3c3c3c3c3c3c",
+            "method": "POST",
+            "sortNum": 220000,
+            "created": "2023-11-27T17:45:52.563Z",
+            "modified": "2023-11-27T17:47:43.424Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "039461ff-f908-4dbf-b4ff-0644370bbc0a",
+            "colId": "bbdbcb67-67df-483e-b4f4-fecfe4b805ad",
+            "containerId": "",
+            "name": "/login",
+            "url": "/auth/login",
+            "method": "POST",
+            "sortNum": 230000,
+            "created": "2023-11-28T16:47:22.827Z",
+            "modified": "2023-11-28T17:42:45.751Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDExOTMwNDEsImV4cCI6MTcwMTIwMDI0MX0.N-MVHx6u4VRhhHWby9jtNj_s2w1h3IIUantc1eVA0uQ\""
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:8080"
+        }
+    }
+}
