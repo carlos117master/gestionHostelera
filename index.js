@@ -42,9 +42,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/habitaciones', Habitacion);
-app.use("/",(req, res, next) => {
-  res.redirect("/habitaciones");
-});
 app.use('/limpiezas', Limpieza);
 app.use('/auth', auth);
 
