@@ -25,8 +25,7 @@ router.get('/',(req,res) => {
     habitacion.find().then(resultado => {
         res.render('habitaciones_listado', {habitaciones: resultado});
     }).catch (error => {
-        res.status(500)
-           .send({error: "Error obteniendo habitaciones"});
+        res.render({error: "Error obteniendo habitaciones"});
     }); 
 });
 
