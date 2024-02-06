@@ -3,7 +3,9 @@ const Habitacion = require("../models/habitacion");
 const Limpieza = require("../models/limpieza");
 const usuario = require("../models/usuario");
 
-mongoose.connect('mongodb://127.0.0.1:27017/hotel');
+let direccion = 'mongodb://127.0.0.1:27017/hotel';
+
+mongoose.connect('mongodb://localhost:27017');
 async function cargarDatos(){
         let habitaciones = [
             new Habitacion({
