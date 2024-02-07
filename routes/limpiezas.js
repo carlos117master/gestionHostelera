@@ -6,7 +6,7 @@ const { autenticacion } = require('../utils/auth');
 
 let router = express.Router();
 
-router.get('/nueva/:id', (req, res) => {
+router.get('/nueva/:id',autenticacion, (req, res) => {
     const habitacionId = req.params.id;
     res.render('limpiezas_nueva', { habitacion:habitacionId});
 });
